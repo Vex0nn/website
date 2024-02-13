@@ -1,1 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Protest Riot', sans-serif;
+    background: linear-gradient(-45deg, rgb(201, 121, 133), rgb(240, 153, 168), rgb(194, 145, 153));
+    background-size: 1500% 1500%;
+    overflow: auto;
+    animation: gradient 4s ease infinite;
+}
+
+.button {
+    width: 16vw;
+    height: 12vh;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    border: 2px solid rgb(194, 145, 153);
+    background-color: pink;
+    color: rgb(228, 135, 150);
+}
+
+h1 {
+    color: rgb(145, 58, 73);
+    font-size: 50px;
+}
+
+.button:active {
+    animation: animateButton 0.2s forwards;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+@keyframes animateButton {
+    100% {
+        transform: translateY(8px);
+    }
+}
+
+#result {
+    font-size: 20px;
+    color: rgb(177, 71, 87);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img {
+    width: 13vw;
+    height: 25vh;
+}
+
+.gif {
+    position: absolute;
+    left: 32rem;
+    top: 23rem;
+}
+
+.gif2 {
+    position: absolute;
+    right: 32rem;
+    top: 23rem;
+}
